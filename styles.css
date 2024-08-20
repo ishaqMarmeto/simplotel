@@ -63,8 +63,8 @@ button[class="hero-text"] {
     left: 50px;
     height: 30px;
     /* text-align: center; */
-    width: 150px;
-    padding: 0px;
+    /* width: 150px; */
+    padding: 0px 40px;
     
 }
 
@@ -199,5 +199,9 @@ button {
 
     .card {
         width: 80%;
+    }
+
+    button[class="hero-text"] {
+        padding: 0px 20px;
     }
 }
