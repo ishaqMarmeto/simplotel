@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #070707;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hamburger, .close-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('heroimg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    /* display: flex;
+    align-items: flex-end; */
+    /* left: 100px; */
+}
+
+button[class="hero-text"] {
+    background-image: linear-gradient(to right, black,rgb(128, 128, 128));
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    /* padding: 20px; */
+    /* margin: 0; */
+    bottom: 30px;
+    left: 50px;
+    height: 30px;
+    /* text-align: center; */
+    width: 150px;
+    padding: 0px;
+    
+}
+
+.three-paragraphs .paragraph-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+}
+
+.three-paragraphs p {
+    max-width: 300px;
+}
+
+.card-section {
+    padding: 20px;
+    background-color: rgb(204, 200, 200);
+}
+
+.card-section>h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card-container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    
+}
+
+
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    flex-grow: 1;
+}
+
+.card-left{
+    text-align: left;
+}
+.card-center{
+    text-align: center;
+}
+
+.card-right{
+    text-align: right;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-weight: bold;
+}
+
+.card p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.social{
+    border: 1px solid black;
+    border-radius: 40px;
+}
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .social{
+        display: none;
+    }
+    .nav-links {
+        position: fixed;
+        right: -120%;
+        top: 0;
+        width: 150px;
+        height: 100%;
+        background-color:  rgba(48, 44, 44, 0.589);
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+    .nav-links>li:first-child{
+        color: red;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        
+    }
+    .nav-links a {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .hamburger, .close-menu {
+        display: block;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .three-paragraphs .paragraph-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}

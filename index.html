@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="phoenix-logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li class="close-menu">
+                <i class="fas fa-times" id="closeMenu"></i>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Restaurant</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+            <li class="social"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Section 2 -->
+    <div class="hero-section">
+        <button class="hero-text">
+            Lorem Ipsum
+        </button>
+    </div>
+
+    <!-- Section 3 -->
+    <section class="three-paragraphs">
+        <div class="paragraph-container">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="card-section">
+        <h1>Lorem Ipsum</h1>
+        <div class="card-container">
+            <div class="card card-left">
+                <img src="rooms.jpg" alt="Room Image">
+                <h3>ROOMS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.sed do elusmod tempor<br> incididunt ut labore et delore magna aliqua.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card card-center">
+                <img src="dining.jpg" alt="Dining Image">
+                <h3>DINING</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.sed do elusmod tempor<br> incididunt ut labore et delore magna aliqua.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card card-right">
+                <img src="pool.jpg" alt="Pool Image">
+                <h3>POOLS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.sed do elusmod tempor<br> incididunt ut labore et delore magna aliqua.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const closeMenu = document.getElementById('closeMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.style.right = '0';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navLinks.style.right = '-120%';
+        });
+    </script>
+</body>
+
+</html>
