@@ -1,4 +1,4 @@
-# Responsive Web Page Pseudocode
+PUBLISHED LINK : https://simplotel-ishaq-shaik.netlify.app/
 
 ## 1. Navigation Section
 - **Display Logo:**
